@@ -2,29 +2,61 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
-  // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  // 🧠 ML / CV / AI
+  { name: "PyTorch", level: 90, category: "ML" },
+  { name: "KANs / Symbolic ML", level: 85, category: "ML" },
+  { name: "YOLOv8 / YOLOv11", level: 85, category: "ML" },
+  { name: "Scikit-learn", level: 80, category: "ML" },
+  { name: "Matplotlib", level: 80, category: "ML" },
+  { name: "NumPy", level: 85, category: "ML" },
+  { name: "Pandas", level: 85, category: "ML" },
+  { name: "SentenceTransformers", level: 75, category: "ML" },
+  { name: "HuggingFace (BLIP, Transformers)", level: 85, category: "ML" },
+  { name: "Google GenAI (Gemini API)", level: 80, category: "ML" },
+  { name: "ResNet-50", level: 70, category: "ML" },
 
-  // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
+  // 🧩 Infra / Systems / DevOps
+  { name: "FastAPI", level: 80, category: "infra" },
+  { name: "Docker", level: 75, category: "infra" },
+  { name: "PostgreSQL", level: 70, category: "infra" },
+  { name: "Prometheus & Grafana", level: 65, category: "infra" },
+  { name: "LangChain", level: 65, category: "infra" },
+  { name: "Firebase", level: 60, category: "infra" },
+  { name: "AWS / GCP", level: 60, category: "infra" },
+  { name: "CI/CD (GitHub Actions)", level: 60, category: "infra" },
+  { name: "Linux", level: 70, category: "infra" },
+  { name: "ROS (learning)", level: 40, category: "infra" },
 
-  // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  // 💻 Frontend / UI
+  { name: "React", level: 80, category: "frontend" },
+  { name: "Tailwind CSS", level: 80, category: "frontend" },
+  { name: "Streamlit", level: 80, category: "frontend" },
+  { name: "Tkinter GUI", level: 70, category: "frontend" },
+  { name: "HTML/CSS/JS", level: 75, category: "frontend" },
+  { name: "Figma", level: 65, category: "frontend" },
+
+  // 📦 Common Tools / Daily Drivers
+  { name: "VSCode", level: 90, category: "tools" },
+  { name: "Git / GitHub", level: 90, category: "tools" },
+  { name: "Google Colab", level: 85, category: "tools" },
+  { name: "Chrome DevTools", level: 70, category: "tools" },
+  { name: "Jupyter Notebooks", level: 80, category: "tools" },
+  { name: "Postman", level: 70, category: "tools" },
+  { name: "Excel / MS Office", level: 70, category: "tools" },
+  { name: "Windows API", level: 65, category: "tools" },
+  { name: "Spotify API", level: 60, category: "tools" },
+  { name: "Genius API", level: 60, category: "tools" },
+
+  // 📐 Core Languages
+  { name: "Python", level: 95, category: "languages" },
+  { name: "C / C++", level: 85, category: "languages" },
+  { name: "JavaScript", level: 80, category: "languages" },
+  { name: "MATLAB", level: 75, category: "languages" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+
+
+const categories = ["all", "ML", "infra", "frontend", "tools", "languages"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");

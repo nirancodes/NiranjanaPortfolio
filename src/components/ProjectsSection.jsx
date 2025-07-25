@@ -2,34 +2,24 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 2,
-    title: "Orbit Analytics Dashboard",
-    description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    id: 3,
-    title: "E-commerce Platform",
-    description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
+  id: 1,
+  title: "SceneScore: Mood-to-Music AI",
+  description: "GenAI app mapping emotional cues in photos to ideal Spotify tracks using NLP + embeddings.",
+  tags: ["NLP", "LLM", "Emotion AI"]
+},
+{
+  id: 2,
+  title: "DroneWatch: Real-Time Surveillance",
+  description: "Drone network design + Ant Colony Optimization over real environments. Packet loss modeling and dynamic reliability scoring.",
+  tags: ["MATLAB", "ACO", "Cyber Simulation"]
+},
+{
+  id: 3,
+  title: "KANs for AGC Cyberattack Detection",
+  description: "Symbolic learning for stealthy FDIA detection in power grid AGC systems. Lightweight and interpretable.",
+  tags: ["KAN", "Explainable AI", "Cybersecurity"]
+}
+,
 ];
 
 export const ProjectsSection = () => {
@@ -42,8 +32,7 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          These are a few of my recent builds — each project tackles real-world complexity, blending applied research with engineering to create secure, interpretable ML systems and edge-to-cloud observability tools. From symbolic models to embedded CV pipelines, I focus on clarity, robustness, and fast iteration from prototype to impact.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -100,7 +89,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/nirancodes"
           >
             Check My Github <ArrowRight size={16} />
           </a>

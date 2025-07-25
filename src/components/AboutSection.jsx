@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { UserLock, Telescope, MonitorCog } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -11,22 +11,14 @@ export const AboutSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
-            </h3>
-
-            <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
-              in creating responsive, accessible, and performant web
-              applications using modern technologies.
-            </p>
-
-            <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
-            </p>
+<h3 className="text-2xl font-semibold">
+  Building trustworthy, explainable AI systems.
+</h3>
+<p className="text-muted-foreground">
+  I'm a Computer Engineering student and an <a href="https://www.ece.utoronto.ca/join-the-ece-ambassador-program/" target="_blank" rel="noopener noreferrer" className="text-primary underline glow-link">ECE ambassador</a> at UofT specializing in interpretable ML, cyber-resilient infrastructure, and deployment pipelines. I build systems across CV, NLP, and symbolic ML where security, observability, and clarity are first-class priorities.
+  <br /><br />
+  Currently, I’m researching cyberattack detection in smart grids with the <a href="https://dkundur.comm.utoronto.ca/" target="_blank" rel="noopener noreferrer" className="text-primary underline glow-link">Kundur Research Group</a>. I'm also leading perception tooling for the <a href="https://fsaeutoronto.ca/" target="_blank" rel="noopener noreferrer" className="text-primary underline glow-link">UTFR Driverless team</a> — building automated cone labeling pipelines using Python and YOLOv8 to speed up AV training.
+</p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
@@ -34,60 +26,53 @@ export const AboutSection = () => {
                 Get In Touch
               </a>
 
-              <a
-                href=""
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
-              >
-                Download CV
-              </a>
+              
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6">
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Web Development</h4>
-                  <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
-                </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                  <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="gradient-border p-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
-                </div>
+<div className="grid grid-cols-1 gap-6">
+  <div className="gradient-border p-6 card-hover">
+    <div className="flex items-start gap-4">
+      <div className="p-3 rounded-full bg-primary/10">
+        <UserLock className="h-6 w-6 text-primary" />
+      </div>
+      <div className="text-left">
+        <h4 className="font-semibold text-lg">🔐 Interpretable & Secure ML</h4>
+        <p className="text-muted-foreground">
+Building resilient ML pipelines — from symbolic models to YOLOv8 — with a focus on explainability and trust in high-stakes systems.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div className="gradient-border p-6 card-hover">
+    <div className="flex items-start gap-4">
+      <div className="p-3 rounded-full bg-primary/10">
+        <Telescope className="h-6 w-6 text-primary" />
+      </div>
+      <div className="text-left">
+        <h4 className="font-semibold text-lg">🛠 Systems & Observability</h4>
+        <p className="text-muted-foreground">
+Deploying fast, traceable AI systems across edge and cloud using Docker, FastAPI, PostgreSQL, Prometheus, and Grafana.
+       </p>
+      </div>
+    </div>
+  </div>
+  <div className="gradient-border p-6 card-hover">
+    <div className="flex items-start gap-4">
+      <div className="p-3 rounded-full bg-primary/10">
+        <MonitorCog className="h-6 w-6 text-primary" />
+      </div>
 
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
-                  <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="text-left">
+        <h4 className="font-semibold text-lg">📚 Applied Research to Real Systems</h4>
+        <p className="text-muted-foreground">
+Translating cutting-edge research into tools — from FDIA detection and GenAI workflows to drone-based CV systems.      </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
         </div>
       </div>
     </section>
